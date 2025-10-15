@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enhörningarnas Rike</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">🦄 Enhörningarnas Rike</h1>
+      <nav class="nav">
+        <button id="themeToggle" aria-label="Växla tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Välkommen till ett magiskt ställe</h2>
+          <p>Utforska enhörningarnas värld — färg, glitter och vänlighet.</p>
+          <div class="hero-actions">
+            <button id="sparkleBtn" class="btn">Sprid glitter</button>
+            <a href="#gallery" class="btn ghost">Se galleri</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <svg viewBox="0 0 200 200" class="unicorn-svg" role="img" aria-labelledby="uTitle">
+            <title id="uTitle">Tecknad enhörning</title>
+            <defs>
+              <linearGradient id="hornGrad" x1="0" x2="1">
+                <stop offset="0%" stop-color="#ffd86b"/>
+                <stop offset="100%" stop-color="#ff8ec0"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(20,10)">
+              <ellipse cx="90" cy="120" rx="60" ry="40" fill="#fff" stroke="#f6d3f0" />
+              <circle cx="115" cy="95" r="6" fill="#333" />
+              <path d="M55 55 Q65 20 95 45" stroke="url(#hornGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M45 80 Q20 60 30 40" stroke="#ffb6e6" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M50 100 Q70 65 110 80" stroke="#bde6ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <h3>Galleri</h3>
+      <p class="muted">Klicka på en kort för att läsa mer.</p>
+      <div class="cards">
+        <article class="card" data-title="Skogsänkan">
+          <img src="https://placehold.co/400x250/fef6ff/c77?text=Skogsänkan" alt="Bild av skogsänkan"/>
+          <h4>Skogsänkan</h4>
+          <p class="muted">En lugn enhörning som vaktar skogen.</p>
+        </article>
+
+        <article class="card" data-title="Regnbågsfararen">
+          <img src="https://placehold.co/400x250/f0fbff/058?text=Regnbågsfararen" alt="Bild av regnbågsfararen"/>
+          <h4>Regnbågsfararen</h4>
+          <p class="muted">Snabb och lekfull — lämnar regnbågar i sitt spår.</p>
+        </article>
+
+        <article class="card" data-title="Stjärnväktaren">
+          <img src="https://placehold.co/400x250/0b0520/ffd?text=Stjärnväktaren" alt="Bild av stjärnväktaren"/>
+          <h4>Stjärnväktaren</h4>
+          <p class="muted">Vandrar bland stjärnorna.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container about">
+      <h3>Om enhörningar</h3>
+      <p>Enhörningar representerar fantasi, vänlighet och nyfikenhet. Denna sida är ett litet hyllning till det lekfulla och magiska.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Enhörningarnas Rike — Byggd med 🌈 och kod</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Stäng">✕</button>
+      <h4 id="modalTitle"></h4>
+      <p id="modalBody"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
